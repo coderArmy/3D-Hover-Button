@@ -1,0 +1,159 @@
+body {
+
+    background:#afafaf;
+
+}
+
+.center{
+
+    position:absolute;
+
+    left:50%;
+
+    top:30%;
+
+    transform:translate(-50%,-50%);
+
+}
+
+.center .button{
+
+    outline:none;
+
+    border:none;
+
+    background:#2367ef;
+
+    font-size:2em;
+
+    font-weight:700;
+
+    color:WHITE;
+
+    box-shadow:1px 1px 1px #fff,
+
+               3px 1px 1px 2px #fff,
+
+               5px 1px 1px 2px #fff,
+
+               7px 1px 1px 2px #fff,
+
+               9px 2px 1px 3px #fff,
+
+               11px 2px 1px 4px #fff,
+
+               13px 2px 1px 4px #fff;
+
+    transition:1s;
+
+    transform:skewX(-20deg) rotateX(10deg) rotateZ(-5deg);
+
+}
+
+.center .button:focus{
+
+    box-shadow:1px 1px 1px #fff,
+
+               2px 2px 1px 2px #eee,
+
+               3px 3px 1px 2px #ddd,
+
+               4px 4px 1px 2px #ccc,
+
+               5px 5px 1px 3px #bbb,
+
+               6px 6px 1px 4px #aaa,
+
+               7px 7px 1px 4px #999;
+
+    transform:skewX(-15deg) skewY(5deg);
+
+}
+
+.center .button .text{
+
+    display:inline-block;
+
+    transition:400ms;
+
+    text-shadow:0px 20px 10px black;
+
+    text-transform:uppercase;
+
+    transform:skewX(20deg) rotateY(10deg) translateY(-20px);
+
+}
+
+.center .button:focus .text{
+
+    transform:translate(0);
+
+    text-shadow:1px 1px 3px black;
+
+}
+
+#yt{
+
+    position:fixed;
+
+    bottom:2%;
+
+    text-align:center;
+
+    font-size:2.5em;
+
+    background:#0000;
+
+    color:blue;
+
+    width:100%;
+
+    left:-2%;
+
+    border-radius:50px;
+
+    padding:2vh;
+
+    animation:inout 1s linear 2s 60;
+
+}
+
+#yt a{
+
+    background:#f22;
+
+    width:80%;
+
+    border-radius:50px;
+
+    margin:0 auto;
+
+    font-weight:900;
+
+    padding:1vh;
+
+    text-decoration:none;
+
+}
+
+#yt:hover{
+
+    animation:inout 1s linear 1;
+
+}
+
+@keyframes inout{
+
+    0%,100%{
+
+        transform:scale(1.4);
+
+    }
+
+    50%{
+
+        transform:scale(0.6);
+
+    }
+
+}
